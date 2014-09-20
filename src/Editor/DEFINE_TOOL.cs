@@ -62,6 +62,7 @@ public class DEFINE_TOOL : EditorWindow
                 bool nowFlg = EditorGUILayout.Toggle(tDefineData.flg, GUILayout.MaxWidth(10));
                 if(nowFlg != tDefineData.flg) {
                     tDefineData.flg = nowFlg;
+
 					string stdefine = "";
 					foreach( DefineData itemdefine in mDefineList )
 					{
@@ -70,7 +71,7 @@ public class DEFINE_TOOL : EditorWindow
 					}
 					PlayerSettings.SetScriptingDefineSymbolsForGroup(EditorUserBuildSettings.selectedBuildTargetGroup,
 					                                                 stdefine);
-                    //save();
+					//save();
 					AssetDatabase.Refresh();
                 }
 
@@ -87,6 +88,10 @@ public class DEFINE_TOOL : EditorWindow
         }
         EditorGUILayout.EndScrollView();
 
+		if(GUILayout.Button("ok"))
+		{
+			//
+		}
         if(GUILayout.Button("edit template")) {
             System.Diagnostics.Process.Start("open", TEMPLETE_PATH);
         }
