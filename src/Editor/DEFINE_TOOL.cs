@@ -18,7 +18,7 @@ public class DEFINE_TOOL : EditorWindow
     private DefineData[] mDefineList;
     private Vector2      mScrollView = new Vector2();
 	
-    private const string TEMPLETE_PATH = "Assets/smcs.template";
+    private const string TEMPLETE_PATH = "Assets/smcs";
 
 
     //-----------------medhod-----------------------
