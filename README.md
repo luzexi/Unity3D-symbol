@@ -18,9 +18,9 @@ Unity3DDefineTool
 * 点选你需要的宏定义(Click what you want to define)
 ![github](https://github.com/luzexi/Unity3DDefineTool/blob/master/img5.png "示意图5")
 * 在代码里使用宏定义(You can use define in the code)
-    #if CN_MAST
+    \#if CN_MAST
         Debug.Log("ok in the define.");
-    #endif
+    \#endif
 
 
 技术分享请关注: http://www.luzexi.com
