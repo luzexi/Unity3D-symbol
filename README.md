@@ -20,9 +20,9 @@ Unity3DDefineTool
 * 在代码里使用宏定义(You can use define in the code)
 
 # 代码(code)
-    \#if CN_MAST
+    #if CN_MAST
         Debug.Log("ok in the define.");
-    \#endif
+    #endif
 
 
 技术分享请关注: http://www.luzexi.com
