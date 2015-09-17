@@ -92,8 +92,10 @@ public class DEFINE_TOOL : EditorWindow
 		{
 			//
 		}
-        if(GUILayout.Button("edit template")) {
-            System.Diagnostics.Process.Start("open", TEMPLETE_PATH);
+        if(GUILayout.Button("edit template"))
+        {
+    	    string file_path = Application.dataPath + "/../" + TEMPLETE_PATH;
+    	    System.Diagnostics.Process.Start(@file_path);
         }
 
         if(GUILayout.Button("reload")) {
